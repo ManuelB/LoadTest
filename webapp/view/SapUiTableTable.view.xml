@@ -1,0 +1,61 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" controllerName="LoadTest.LoadTest.controller.SapUiTableTable"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.ui.table">
+	<Table id="table" rows="{/Customers}" visibleRowCount="50">
+		<columns>
+			<Column>
+				<m:Label text="Id"/>
+				<template>
+					<m:Text text="{Id}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="Image"/>
+				<template>
+					<m:Image src="{Image}" tooltip="{FirstName} {LastName}"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="Salutation"/>
+				<template>
+					<m:Text text="{Salutation}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="FirstName"/>
+				<template>
+					<m:Text text="{FirstName}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="LastName"/>
+				<template>
+					<m:Text text="{LastName}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="ZipCode"/>
+				<template>
+					<m:Text text="{ZipCode}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="City"/>
+				<template>
+					<m:Text text="{City}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="Street"/>
+				<template>
+					<m:Text text="{Street}" wrapping="false"/>
+				</template>
+			</Column>
+			<Column>
+				<m:Label text="Organization"/>
+				<template>
+					<m:Text text="{Organization}" wrapping="false"/>
+				</template>
+			</Column>
+		</columns>
+	</Table>
+</mvc:View>

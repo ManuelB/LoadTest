@@ -1,0 +1,119 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "LoadTest.LoadTest",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"Customers": {
+				"uri": "data/Customers-10000.json",
+				"type": "JSON"
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "LoadTest.LoadTest.view.Root",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "Customers"
+			},
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "LoadTest.LoadTest.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "LoadTest.LoadTest.view",
+				"controlAggregation": "content",
+				"controlId": "page"
+			},
+			"routes": [
+				{
+					"name": "SapMTable",
+					"pattern": "SapMTable",
+					"target": [
+						"SapMTable"
+					]
+				},
+				{
+					"name": "SapUiTableTable",
+					"pattern": "SapUiTableTable",
+					"target": [
+						"SapUiTableTable"
+					]
+				}
+			],
+			"targets": {
+				"SapMTable": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "SapMTable"
+				},
+				"SapUiTableTable": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearAggregation": true,
+					"viewName": "SapUiTableTable"
+				}
+			}
+		}
+	}
+}

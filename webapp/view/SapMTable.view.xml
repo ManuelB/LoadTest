@@ -1,0 +1,45 @@
+<mvc:View controllerName="LoadTest.LoadTest.controller.SapMTable" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<Table items="{/Customers}" growing="true" growingScrollToLoad="true">
+		<columns>
+			<Column>
+				<Text text="Id"/>
+			</Column>
+			<Column>
+				<Text text="Image"/>
+			</Column>
+			<Column>
+				<Text text="Salutation"/>
+			</Column>
+			<Column>
+				<Text text="FirstName"/>
+			</Column>
+			<Column>
+				<Text text="LastName"/>
+			</Column>
+			<Column>
+				<Text text="ZipCode"/>
+			</Column>
+			<Column>
+				<Text text="City"/>
+			</Column>
+			<Column>
+				<Text text="Street"/>
+			</Column>
+			<Column>
+				<Text text="Organization"/>
+			</Column>
+		</columns>
+		<ColumnListItem>
+			<Text text="{Id}"/>
+			<Image src="{Image}" tooltip="{FirstName} {LastName}"/>
+			<Text text="{Salutation}"/>
+			<Text text="{FirstName}"/>
+			<Text text="{LastName}"/>
+			<Text text="{ZipCode}"/>
+			<Text text="{City}"/>
+			<Text text="{Street}"/>
+			<Text text="{Organization}"/>
+		</ColumnListItem>
+	</Table>
+</mvc:View>
