@@ -11,7 +11,7 @@
 			<Column>
 				<m:Label text="Image"/>
 				<template>
-					<m:Image src="{Image}" tooltip="{FirstName} {LastName}"/>
+					<m:Image src="http://www.incentergy.de/risolution/avatars/{Image}" tooltip="{FirstName} {LastName}"/>
 				</template>
 			</Column>
 			<Column>
