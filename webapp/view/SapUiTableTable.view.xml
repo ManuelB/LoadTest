@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:m="sap.m" controllerName="LoadTest.LoadTest.controller.SapUiTableTable"
 	xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.ui.table">
-	<Table id="table" rows="{/Customers}" visibleRowCount="50">
+	<Table id="table" rows="{/Customers}" visibleRowCountMode="Auto">
 		<columns>
 			<Column>
 				<m:Label text="Id"/>

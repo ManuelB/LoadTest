@@ -1,7 +1,6 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/ResizeHandler"
-], function(Controller, ResizeHandler) {
+	"sap/ui/core/mvc/Controller"
+], function(Controller) {
 	"use strict";
 
 	return Controller.extend("LoadTest.LoadTest.controller.SapUiTableTable", {
@@ -29,10 +28,8 @@ sap.ui.define([
 		 * This hook is the same one that SAPUI5 controls get after being rendered.
 		 * @memberOf LoadTest.LoadTest.view.SapUiTableTable
 		 */
-		onAfterRendering: function() {
-			var oDomRef = this.byId("table").getDomRef();
-			// TODO: Add resize handler
-		},
+		//onAfterRendering: function() {
+		//},
 
 		/**
 		 * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
