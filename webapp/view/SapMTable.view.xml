@@ -32,11 +32,11 @@
 		</columns>
 		<ColumnListItem>
 			<Text text="{Id}"/>
-			<Image src="http://www.incentergy.de/risolution/avatars/{Image}" tooltip="{FirstName} {LastName}"/>
+			<Image src="http://www.incentergy.de/risolution/avatars/{Image}" width="5rem" tooltip="{FirstName} {LastName}"/>
 			<Text text="{Salutation}"/>
 			<Text text="{FirstName}"/>
 			<Text text="{LastName}"/>
-			<Text text="{ZipCode}"/>
+			<Text text="{Zipcode}"/>
 			<Text text="{City}"/>
 			<Text text="{Street}"/>
 			<Text text="{Organization}"/>

@@ -11,7 +11,7 @@
 			<Column>
 				<m:Label text="Image"/>
 				<template>
-					<m:Image src="http://www.incentergy.de/risolution/avatars/{Image}" tooltip="{FirstName} {LastName}"/>
+					<m:Image src="http://www.incentergy.de/risolution/avatars/{Image}" width="5rem" tooltip="{FirstName} {LastName}"/>
 				</template>
 			</Column>
 			<Column>
@@ -35,7 +35,7 @@
 			<Column>
 				<m:Label text="ZipCode"/>
 				<template>
-					<m:Text text="{ZipCode}" wrapping="false"/>
+					<m:Text text="{Zipcode}" wrapping="false"/>
 				</template>
 			</Column>
 			<Column>
